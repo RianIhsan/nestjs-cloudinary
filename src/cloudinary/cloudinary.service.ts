@@ -15,11 +15,11 @@ export class CloudinaryService {
     });
   }
 
-  async getSecureUrl(publicId: string): Promise<string> {
+  /*async getSecureUrl(publicId: string): Promise<string> {
     const result = await v2.api.resources({ public_ids: [publicId], max_results: 1 });
     if (result.resources.length === 0) {
       throw new Error('Image not found');
     }
     return result.resources[0].secure_url;
-  }
+  }*/
 }
